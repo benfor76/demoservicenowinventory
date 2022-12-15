@@ -13,4 +13,4 @@
       register: get_cmdb_data
 
     - debug:
-        var: got_weather
+        var: get_cmdb_data 
