@@ -5,7 +5,7 @@
   tasks:
     - name: REST GET CMDB Data in ServiceNow
       uri:
-        url: "https://dev85503.service-now.comapi/now/table/cmdb_ci_server"
+        url: "https://dev85503.service-now.com/api/now/table/cmdb_ci_server"
         method: GET
         return_content: yes
         body_format: json
