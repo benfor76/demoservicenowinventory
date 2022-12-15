@@ -7,6 +7,8 @@
       uri:
         url: "https://dev85503.service-now.com/api/now/table/cmdb_ci_server"
         method: GET
+        user: bforrest
+        password: EBf2009$#
         return_content: yes
         body_format: json
       ignore_errors: yes
