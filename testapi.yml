@@ -1,0 +1,16 @@
+---
+- name: Test getting weather information
+  hosts: localhost
+
+  tasks:
+    - name: REST GET CMDB Data in ServiceNow
+      uri:
+        url: "https://dev85503.service-now.comapi/now/table/cmdb_ci_server"
+        method: GET
+        return_content: yes
+        body_format: json
+      ignore_errors: yes
+      register: get_cmdb_data
+
+    - debug:
+        var: got_weather
